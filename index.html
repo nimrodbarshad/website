@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Nimrod Barshad is the managing director at SkyVac Systems." />
+        <meta name="description" content="Nimrod Barshad " />
         <title>Nimrod Barshad</title>
         <style>
             *{
@@ -34,8 +34,8 @@
     <body>
         <h1>Welcome to my personal website!</h1>
         <p>I built this website largely because a bot scraped my name from the Pioneer Works website staff page and sold my colleagues and I to some kind of dummy text generator that has filled the search results for my name "Nimrod Barshad" with incoherent claims about e.g. my illustrious career as a painter that never happened.</p>
-        <p>I am currently the managing director at <a href="https://skyvac.us">SkyVac Systems</a>.</p>
-        <p>I was previously the chief technology officer at <a href="https://pioneerworks.org">Pioneer Works</a> in New York City.</p>
+        <p>I am currently marketing director at <a href="https://skyvac.us">SKYVAC</a> in Massachusetts.</p>
+        <p>Previously, I was chief technology officer at <a href="https://pioneerworks.org">Pioneer Works</a> in New York City.</p>
         <p><a href="mailto:nimrod.barshad@gmail.com">Contact me</a></p>
         <figure>
             <img src="photo.jpeg" alt="Nimrod Barshad" />
@@ -43,6 +43,11 @@
         </figure>
     </body>
     <script type="text/javascript">
-        fetch(`https://server.skyvac.us/.netlify/functions/load`, { method: 'POST' })
+        fetch(`https://server.skyvac.us/.netlify/functions/load`, { 
+            method: 'POST',
+            body: JSON.stringify({
+                location: window.location,
+            })
+        })
     </script>
 </html>
