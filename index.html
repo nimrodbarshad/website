@@ -15,11 +15,12 @@
                  padding: 0;
             }
             figure img{
-                width: 200px;
+                width: 100%;
+                max-width: 420px;
                 height: auto;
             }
             figure figcaption{
-                font-size: 60%;
+                font-size: 100%;
             }
             h1, p{
                 font-size: 16px;
@@ -28,18 +29,20 @@
             }
             h1{
                 font-weight: normal;
+                text-decoration: underline;
             }
         </style>
     </head>
-    <body>
+    <body>        
+        <figure>
+            <img src="photo.jpeg" alt="Nimrod Barshad" />
+            <figcaption>Photo by Sasha von Oldershausen</figcaption>
+        </figure>   
         <h1>Nimrod Barshad</h1>
         <p>This website exists primarily because a bot scraped my name into some sort of company website generator, such that a search would lead you to believe that I am an administrator at hundreds of fictional non-profits or sometimes a painter or sculptor. I am not.</p>
         <p>I am a programmer working on a project called User Land.</p>
         <p>Previously, I was chief technology officer at <a href="https://pioneerworks.org">Pioneer Works</a> in New York City.</p>
-        <figure>
-            <img src="photo.jpeg" alt="Nimrod Barshad" />
-            <figcaption>Photo by Sasha von Oldershausen</figcaption>
-        </figure> 
+
         <p><a href="https://github.com/nimrodbarshad">Contact me</a></p>
     </body>
 </html>
